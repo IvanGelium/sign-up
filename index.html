@@ -35,33 +35,46 @@
                         <div class="first row">
                             <div class="name">
                                 <p>Имя игрока*</p>
-                                <input type="text" name="f-name" id="">
+                                <input class="textfieldfornames" type="text" name="f-name" id="">
                             </div>
                             <div class="nick">
-                                <p>Никнейм*</p>
-                                <input type="text" name="" id="l-name">
+                                <p>Никнейм</p>
+                                <input class="textfieldfornames" type="text" name="" id="l-name">
                             </div>
                         </div>
 
                         <div class="second row">
-                            <div class="name">
-                                <p>Имя игрока</p>
-                                <input type="radio" name="f-name" id="">
+                            <div class="name" style="width: 7rem;">
+                                <p>Пол игрока</p>
+                                <div style="display: flex;" >
+                                    <label for="sex-m" class="sex-label">Мужской</label>
+                                    <div class="sex-input"><input type="radio" name="sex" id="sex-m"></div>
+                                </div>
+                                <div style="display: flex;">
+                                    <label for="sex-m" class="sex-label">Женский</label>
+                                    <div class="sex-input"><input type="radio" name="sex" id="sex-f"></div>
+                                </div>
+                                <div style="display: flex;">
+                                    <label for="sex-m" class="sex-label">Чел ты...</label>
+                                    <div class="sex-input"><input type="radio" name="sex" id="sex-wtf"></div>
+                                </div>
+                                    <div class="sex-label-class">
+                                    </div>
                             </div>
                             <div class="nick">
-                                <p>Никнейм</p>
-                                <input type="text" name="" id="l-name">
+                                <p>Дата рождения</p>
+                                <input type="date" name="" id="b-date">
                             </div>
                         </div>
 
                         <div class="third row">
                             <div class="name">
-                                <p>Имя игрока</p>
-                                <input type="text" name="f-name" id="">
+                                <p>Почта*</p>
+                                <input class="textfieldfornames" type="text" name="f-name" id="">
                             </div>
                             <div class="nick">
-                                <p>Никнейм</p>
-                                <input type="text" name="" id="l-name">
+                                <p>Пароль*</p>
+                                <input class="textfieldfornames" type="text" name="" id="l-name">
                             </div>
                         </div>
 
@@ -69,7 +82,7 @@
                 </fieldset>
             </div>
             <div class="footer">
-        
+                
             </div>
         </div>
     </div>

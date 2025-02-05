@@ -55,7 +55,7 @@ body {
 .logo-text {
     font-size: 5rem;
     font-family: 'almendra_scregular';
-    color: aliceblue;
+    color: white;
 }
 
 .logo-cont:hover {
@@ -151,7 +151,59 @@ p {
     opacity: 70%;
 }
 
-input {
+.sex-input {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sex-label {
+    text-wrap: nowrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#sex-m,#sex-f,#sex-wtf {
+    color: black;
+    appearance: none;
+
+    border-radius:  0% 50% 0% 0%;
+    width: 2rem;
+    height: .9rem;
+  
+    border: 2px solid #1d6375;
+    transition: 0.2s all linear;
+    outline: none;
+    background-color: aliceblue;
+
+}
+
+#sex-m:active,#sex-f:active,#sex-wtf:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+    
+}
+
+#sex-m:checked,#sex-f:checked,#sex-wtf:checked {
+    border-left: 1.9rem solid  #1d6375;
+}
+
+#sex-m:hover,#sex-f:hover,#sex-wtf:hover,
+#sex-m:focus,#sex-f:focus,#sex-wtf:focus {
+    
+}
+
+.textfieldfornames {
+    width: 15rem;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    font-size: 100%;
+    box-sizing: border-box;
+
+}
+
+#b-date {
     width: 15rem;
     line-height: 2rem;
     border-radius: 0.5rem;
