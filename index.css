@@ -72,13 +72,13 @@ body {
 .right-cont {
     width: 71vw;
     height: 100vh;
-    background-color:cadetblue;
+    background-color:rgb(105, 126, 146);
 }
 
 .quote-cont {
 
     height: 33vh;
-    background-color: antiquewhite;
+    background-color: rgb(123, 146, 160);
     display: flex;
     align-items: center;
 
@@ -103,15 +103,16 @@ body {
 
 .form-cont {
     height: 33vh;
-    background-color: aquamarine;
+    background-color: rgb(159, 183, 213);
     padding: 3rem 5rem;
     box-sizing: border-box;
+    border-bottom: 5px solid rgb(83, 83, 105);
 }
 
 .lgd{
     font-size: 1.5rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0px;
+    margin: 0px;    
 }
 
 .fds {
@@ -191,23 +192,94 @@ p {
 
 #sex-m:hover,#sex-f:hover,#sex-wtf:hover,
 #sex-m:focus,#sex-f:focus,#sex-wtf:focus {
-    
+    outline: 1px solid rgb(59, 59, 100);
 }
 
-.textfieldfornames {
+.textfields {
+    appearance: none;
+    border:1px solid #ccc;
     width: 15rem;
     line-height: 2rem;
     border-radius: 0.5rem;
     font-size: 100%;
     box-sizing: border-box;
 
+}
+
+.textfields:hover {
+    border: 1px solid #555 
+}
+
+.textfields:focus {
+    outline: 1px solid blue;
+}
+
+.textfields:user-valid {
+    outline: 1px solid green;
+}
+
+.textfields:user-invalid {
+    outline: 1px solid red;
 }
 
 #b-date {
+    appearance: none;
+    border: 0px;
     width: 15rem;
     line-height: 2rem;
     border-radius: 0.5rem;
     font-size: 100%;
     box-sizing: border-box;
 
+}
+
+#b-date:hover {
+    outline: 1px solid #555 
+}
+
+#b-date:focus {
+    outline: 2px solid blue;
+}
+
+.submit { 
+    width: 10rem;
+}
+
+.submit-cont {
+    padding-left: 5rem;
+    padding-top: 3rem;
+}
+
+.submit {
+    appearance: none;
+    border: 2px solid rgb(72, 77, 89);
+    font-size: 2rem;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 1rem;    
+    background-color: rgb(102, 123, 164);
+    color:black;
+}
+
+.submit:hover {
+    outline: 2px solid rgb(52, 61, 82);
+    
+}
+
+.submit:active {
+    outline: 2px solid rgb(52, 61, 82);
+    background-color: #ccc;
+    color:#263368;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(31, 31, 117);
+    font-weight:bolder;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(31, 31, 117);
+    font-weight:bolder;
 }
